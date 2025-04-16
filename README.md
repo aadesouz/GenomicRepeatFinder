@@ -68,4 +68,4 @@ A dictionary, observations, is initiated to track forward and reverse hits in ea
 
 
 
-Many thanks to Dr. Li, Dawei in the writing of this program. 
+Many thanks to Dr. Li, Dawei in the completion of this program. 
