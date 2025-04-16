@@ -1,6 +1,8 @@
 # GenomicRepeatFinder
 Python-based tandem/interspersed repeat finder for FASTA files via sliding/fixed window analysis. 
 
+Run using 'python GenomicRepeatFinder.py'
+
 The python script used to identify repeating patterns in genomic sequences requires the following modules:  Biopython’s SeqIO, `re` , `sys` , and `string`. A FASTA file with the genome of interest is required. 
 
 **User defined parameters:**
