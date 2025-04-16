@@ -1,6 +1,6 @@
 library(tidyverse)
 
-data <- read.table("/Users/aarondesouza/Desktop/ArabTTAGGG_Three_1M.txt", 
+data <- read.table("ArabTTAGGG_Three_1M.txt", 
                    header = TRUE,
                    sep = "\t",
                    stringsAsFactors = FALSE) 
@@ -65,4 +65,4 @@ p <- ggplot(data) +
             hjust = 0,  # Apply left alignment to all labels
             colour = "red", alpha = 0.5, size = 5, fontface = "bold", inherit.aes = FALSE) 
 
-ggsave(p, filename = "/Users/aarondesouza/Desktop/output.pdf", width = 30, height = 30, units = "cm") 
+ggsave(p, filename = "output.pdf", width = 30, height = 30, units = "cm") 
