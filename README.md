@@ -4,12 +4,19 @@ Python-based tandem/interspersed repeat finder for FASTA files via sliding/fixed
 The python script used to identify repeating patterns in genomic sequences requires the following modules:  Biopython’s SeqIO, `re` , `sys` , and `string`. A FASTA file with the genome of interest is required. 
 
 **User defined parameters:**
+
 -       BIN_SIZE = Groups hits based on their location in the genome for graphing.
+
 -       FORWARD_SEQ = The sequence of interest (e.g., `TTTAGGG`).
+
 -       MIN_REPEATS = Minimum number of sequence repeats to qualify. 
+
 -       FASTA_FILE = Path to the FASTA file.
+
 -       WINDOW_SIZE = Length of the analysis window 
+
 -       STEP_SIZE = Step size for adjusting sliding/overlapping window analysis.
+
 ###### Functions:
 -   `prompt_user()`
 	Gathers and verifies user defined parameters
@@ -55,3 +62,4 @@ For example, generate and search for each of these 7 versions and their reverse 
 
 ###### Pattern Matching & Binning Matches: 
 A dictionary, observations, is initiated to track forward and reverse hits in each bin. The script slides across the sequence with STEP_SIZE, extracting from windows of length, WINDOW_SIZE, making sliding window analysis possible. (However, we did not use this for data collection) In each window, the script matches forward and reverse patterns using the `circle_match()` function, which uses `re.finditer()`. Matches can be found starting from any position within the window.
+A dictionary, observations, is initiated to track forward and reverse hits in each bin. The script slides across the sequence with STEP_SIZE, extracting from windows of length, WINDOW_SIZE, making sliding window analysis possible. In each window, the script matches forward and reverse patterns using the `circle_match()` function, which uses `re.finditer()`. Matches can be found starting from any position within the window.
