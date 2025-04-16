@@ -66,6 +66,4 @@ For example, generate and search for each of these 7 versions and their reverse 
 A dictionary, observations, is initiated to track forward and reverse hits in each bin. The script slides across the sequence with STEP_SIZE, extracting from windows of length, WINDOW_SIZE, making sliding window analysis possible. In each window, the script matches forward and reverse patterns using the `circle_match()` function, which uses `re.finditer()`. Matches can be found starting from any position within the window.
 A dictionary, observations, is initiated to track forward and reverse hits in each bin. The script slides across the sequence with STEP_SIZE, extracting from windows of length, WINDOW_SIZE, making sliding window analysis possible. In each window, the script matches forward and reverse patterns using the `circle_match()` function, which uses `re.finditer()`. Matches can be found starting from any position within the window.
 
-
-
 Many thanks to Dr. Li, Dawei in the completion of this program. 
